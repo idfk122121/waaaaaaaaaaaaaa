@@ -1,0 +1,11 @@
+local function disableESP()
+    if _G.ESP then
+        for _, connection in ipairs(_G.ESP) do
+            connection:Disconnect()
+        end
+        _G.ESP = nil
+    end
+end
+
+
+disableESP()
